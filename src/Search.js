@@ -4,7 +4,7 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                <input type="text" /><button>RECHERCHE</button>
+                <input type="text" placeholder="Hoppy, Malt, Angry, News..."/><button className="btn btn-danger text-light">RECHERCHE</button>
             </div>            
         )
     }

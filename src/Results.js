@@ -1,23 +1,20 @@
 import React from "react";
+import Beer from "./Beer";
 
 class Results extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return(
      
             <div>
                 <div className="d-flex flex-row">
-                    <div className="card beer col-4 my-2">123</div>
-                    <div className="card beer col-4 my-2 mx-2">123</div>
-                    <div className="card beer col-4 my-2">123</div>
+                    <div className="card beer col-4 my-2"><Beer beers={this.props.beers}/></div>
                 </div>
-                <div className="d-flex flex-row">
-                    <div className="card beer col-4 my-2">123</div>
-                    <div className="card beer col-4 my-2 mx-2">123</div>
-                    <div className="card beer col-4 my-2">123</div>
-                </div>
+ 
             </div>
-       
-
         )
     }
 }
