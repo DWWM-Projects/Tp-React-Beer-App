@@ -6,12 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5b713;
-  font-family: inter;
-  /* transform: scale(); */
+  font-family: inter;  
 }
 
 .title {
+  font-size: 50px;
   font-family: bevan;
+  transform: rotate(-5deg);
 }
 
 code {
