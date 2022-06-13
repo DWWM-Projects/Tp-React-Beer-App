@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="container d-flex flex-column  mx-auto my-2">
+        <div className="container d-flex flex-column mx-auto my-2">
           <div className="header text-center">
             <Header />
             <Search />

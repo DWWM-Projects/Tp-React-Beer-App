@@ -19,3 +19,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS du composant beer */
+
+.redLine {
+  height: 10px;
+  width: 100%;
+  background-color: #e13e45;
+}
+
+/* .beerPanel {
+  width: 220px;  
+} */
+
+.beerPic {
+  height: 300px;
+  width: 150px;
+}
