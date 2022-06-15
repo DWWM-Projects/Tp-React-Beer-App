@@ -1,36 +1,37 @@
 import React from "react";
+import axios from "axios";
 import Header from "./Header";
 import Search from "./Search";
 import Results from "./Results";
-import axios from "axios";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state={
       beers: [],
+      // myStorage: [],
     }
-
   }
 
   componentDidMount() {
     axios.get("https://api.punkapi.com/v2/beers").then(response => this.setState({ beers: response.data}));
+    // localStorage.setItem("this.state.myStorage", this.state.beers);
   }
 
   render() {
     return (
       <div>
-        <div className="container d-flex flex-column mx-auto my-2">
+        <div className="container mx-auto my-2">
           <div className="header text-center">
             <Header />
-            <Search />
+            <Search />            
           </div>
-  
-          <div className="catalog d-flex flex-column justify-content-center align-items-center">
-            <Results beers={this.state.beers}/>       
+
+          <div className="catalog mx-auto">
+            <Results beers={this.state.beers}/>
+
           </div>
-        </div>
-  
+        </div>  
       </div>
     );
 

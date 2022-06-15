@@ -9,10 +9,16 @@ body {
   font-family: inter;  
 }
 
+.container {
+  margin: auto;
+  width: 80%;
+}
+
 .title {
   font-size: 70px;
   font-family: bevan;
   transform: rotate(-5deg);
+  text-decoration: none;
 }
 
 code {
@@ -20,19 +26,24 @@ code {
     monospace;
 }
 
-/* CSS du composant beer */
-
 .redLine {
   height: 10px;
   width: 100%;
   background-color: #e13e45;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* .beerPanel {
-  width: 220px;  
+  width: 150px;  
 } */
 
 .beerPic {
   height: 300px;
-  width: 150px;
+  width: 140px;
+}
+
+.details {
+  margin: auto;
+  width: 100%;
 }

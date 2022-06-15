@@ -1,27 +1,31 @@
-// import React from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-// class Beer extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state={
-//             beers: this.props.beers,
-//         }
-//     }
+class Beer extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-//     render() {
-//         console.log(this.state.beers)
-//         return (
-//             <div className="row">
-//                 {this.state.beers.map(beer => 
-//                   <div className="beerPanel card d-flex align-items-center my-2 col-3 mx-2" key={beer.id}>
-//                     <div className="redLine"></div>
-//                     <div className="">{beer.name}</div>
-//                     <img className="beerPic" src={beer.image_url} />
-//                 </div>)}
-//             </div>
+    render() {
+        console.log(this.props.beer);
+        return (
+            
+            <div className="row col-12 mx-auto">
+                
+         
+                <Link to={"/details/" + this.props.beer.id}>
+                <div className="beerPanel card d-flex align-items-center my-2 mx-2" key={this.props.beer.id}>
+                    <div className="redLine"></div>
+                    <div className="">{this.props.beer.name}</div>
+                    <img className="beerPic" src={this.props.beer.image_url} />
+                
+                </div></Link>
+                
+                
+            </div>
           
-//         )
-//     }
-// }
+        )
+    }
+}
 
-// export default Beer;
+export default Beer;
